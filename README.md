@@ -1,14 +1,14 @@
 # FinApi - Financeia
-
-Requisitos
-\n Deve ser possível criar uma conta
-[] Deve ser possível buscar o extrato bancário do cliente
-[] Deve ser possível realizar um depósito
-[] Deve ser possível realizar um saque
-[] Deve ser possível buscar o extrato bancário do cliente por data
-[] Deve ser possível atualizar dados da conta do cliente
-[] Deve ser possível obter dados da conta do cliente
-[] Deve ser possível deletar uma conta
+<br />
+Requisitos <br />
+[] Deve ser possível criar uma conta <br />
+[] Deve ser possível buscar o extrato bancário do cliente <br />
+[] Deve ser possível realizar um depósito <br />
+[] Deve ser possível realizar um saque <br />
+[] Deve ser possível buscar o extrato bancário do cliente por data <br />
+[] Deve ser possível atualizar dados da conta do cliente <br />
+[] Deve ser possível obter dados da conta do cliente <br />
+[] Deve ser possível deletar uma conta <br />
 
 Regras de negócio
 [] Não deve ser possível cadastrar uma conta com CPF já existente
