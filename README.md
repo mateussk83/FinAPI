@@ -1,6 +1,7 @@
 # FinApi - Financeia
 <br /><br />
 Requisitos <br />
+<br />
 [] Deve ser possível criar uma conta <br />
 [] Deve ser possível buscar o extrato bancário do cliente <br />
 [] Deve ser possível realizar um depósito <br />
@@ -11,6 +12,7 @@ Requisitos <br />
 [] Deve ser possível deletar uma conta <br />
 <br /><br />
 Regras de negócio<br />
+<br />
 [] Não deve ser possível cadastrar uma conta com CPF já existente<br />
 [] Não deve ser possível fazer depósito em uma conta não existente<br />
 [] Não deve ser possível buscar extrato em uma conta não existente<br />
