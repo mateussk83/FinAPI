@@ -1,7 +1,7 @@
 # FinApi - Financeia
 
 Requisitos
-[] Deve ser possível criar uma conta
+\n Deve ser possível criar uma conta
 [] Deve ser possível buscar o extrato bancário do cliente
 [] Deve ser possível realizar um depósito
 [] Deve ser possível realizar um saque
