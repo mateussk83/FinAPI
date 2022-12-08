@@ -138,4 +138,22 @@ app.get("/account", verifyIfExistsAccountCPF, (request, response) => {
  return response.json(customer);
 })
 
+app.delete("/account", verifyIfExistsAccountCPF, (request, response) => {
+ const{ customer } = request;
+ 
+ //splice -> serve para remover a partir do primeiro parametro 
+ // e o 1 mostra que só vai andar um entao apenas aquele customer
+ customers.splice(customer, 1);
+
+ return response.status(200).json(customers)
+ 
+})
+
+app.get("/balance", verifyIfExistsAccountCPF, (request, response)=> {
+ const { customer } = request;
+
+ const balance = getBalance(customer.statement)
+
+ return response.json(balance)
+})
 app.listen(3333);
