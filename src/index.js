@@ -33,12 +33,15 @@ app.post("/account", (request, response) => {
 
  return response.status(201).send();
 })
-// route params = cpf
-app.get("/statement/:cpf", (request, response) => {
- const { cpf } = request.params;
+// aqui estamos passando o cpf pelo headers
+app.get("/statement", (request, response) => {
+ const { cpf } = request.headers;
 // procurar dentro do array find e retornar a informação completa não só um true ou false 
  const customer = customers.find( customer => customer.cpf === cpf);
-
+ // se nao tiver um customer
+ if(!customer) {
+  return response.status(400).json({error: "Customer not found!"})
+ }
  return response.json(customer.statement)
 })
 
