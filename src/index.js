@@ -33,5 +33,13 @@ app.post("/account", (request, response) => {
 
  return response.status(201).send();
 })
+// route params = cpf
+app.get("/statement/:cpf", (request, response) => {
+ const { cpf } = request.params;
+// procurar dentro do array find e retornar a informação completa não só um true ou false 
+ const customer = customers.find( customer => customer.cpf === cpf);
+
+ return response.json(customer.statement)
+})
 
 app.listen(3333);
